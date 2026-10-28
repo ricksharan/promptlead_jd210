@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ricksharan-promptlead_jd210"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对Prompt 工程负责人·SLO 违约的归因链路相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ricksharan" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ricksharan.github.io"
+Repository = "https://github.com/ricksharan/promptlead_jd210"
+Issues = "https://github.com/ricksharan/promptlead_jd210/issues"
+
+[project.scripts]
+promptlead_jd210 = "promptlead_jd210:main"
+
+[tool.setuptools]
+py-modules = ["promptlead_jd210"]
